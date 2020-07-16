@@ -1,8 +1,12 @@
 # conda-setup
 
 ```console
-   39  gsettings set org.gnome.desktop.background show-desktop-icons false
+gsettings set org.gnome.desktop.background show-desktop-icons false
    
-   67  conda config --set auto_activate_base false
+gsettings set org.gnome.desktop.background primary-color "#FFFFFF"
+gsettings set org.gnome.desktop.background secondary-color "#FFFFFF"
+gsettings set org.gnome.desktop.background color-shading-type "solid"
+   
+conda config --set auto_activate_base false
 ```
 
