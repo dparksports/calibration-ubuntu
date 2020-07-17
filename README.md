@@ -1,6 +1,8 @@
 # conda-setup
 
 ```console
+ps aux --sort -rss
+
 gsettings set org.gnome.desktop.background show-desktop-icons false
    
 gsettings set org.gnome.desktop.background picture-uri ''
