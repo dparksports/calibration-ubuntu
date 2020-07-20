@@ -1,6 +1,11 @@
 # conda-setup
 
 ```console
+sudo apt install libopenblas-dev,libopenblas-base
+sudo apt install liblapacke-dev
+sudo ln -s /usr/include/lapacke.h /usr/include/x86_64-linux-gnu # corrected path for the library 
+export Open_BLAS_INCLUDE_SEARCH_PATHS=/usr/include/x86_64-linux-gnu
+export Open_BLAS_LIB_SEARCH_PATHS=/usr/lib/x86_64-linux-gnu
 
 sudo apt install ca-certificates
 pip3 install certifi
