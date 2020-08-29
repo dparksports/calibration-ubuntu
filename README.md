@@ -22,6 +22,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ps aux --sort -rss
 
+gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+
 gsettings set org.gnome.mutter edge-tiling false
 gsettings set org.gnome.desktop.background show-desktop-icons false
    
