@@ -1,4 +1,4 @@
-# conda-setup
+# ubuntu-setup
 
 ```console
 sudo apt install libopenblas-dev,libopenblas-base
