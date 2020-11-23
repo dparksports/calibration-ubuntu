@@ -13,6 +13,8 @@ imsky@ubuntu:~$ python3
 
 ps aux --sort -rss
 
+xinput set-button-map 14 1 0
+
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 
 gsettings set org.gnome.mutter edge-tiling false
