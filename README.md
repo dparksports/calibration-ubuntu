@@ -15,6 +15,8 @@ ps aux --sort -rss
 
 xinput set-button-map 14 1 0
 
+gnome-extensions disable ubuntu-dock@ubuntu.com
+
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 
 gsettings set org.gnome.mutter edge-tiling false
