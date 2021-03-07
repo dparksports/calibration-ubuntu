@@ -6,7 +6,7 @@ pip3 install certifi
 sudo update-ca-certificates --fresh
 export SSL_CERT_DIR=/etc/ssl/certs
 
-imsky@ubuntu:~$ python3
+pseudoinverse@uv:~$ python3
 >>> import requests
 >>> requests.get("https://google.com")
 <Response [200]>
