@@ -1,4 +1,4 @@
-# customize-ubuntu
+# secure-ubuntu
 
 ```console
 sudo apt install ca-certificates
@@ -10,6 +10,8 @@ imsky@ubuntu:~$ python3
 >>> import requests
 >>> requests.get("https://google.com")
 <Response [200]>
+
+sudo ldconfig /usr/local/cuda/lib64
 
 ps aux --sort -rss
 
