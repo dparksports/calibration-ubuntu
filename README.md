@@ -1,4 +1,4 @@
-# secure-ubuntu
+# calibration-ubuntu
 
 ```console
 sudo apt install ca-certificates
