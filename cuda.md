@@ -1,5 +1,9 @@
   ```sh
 
+
+## disable CUDA
+CUDA_VISIBLE_DEVICES=""
+
 ## successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
 for a in /sys/bus/pci/devices/*; do echo 0 | sudo tee -a $a/numa_node; done
 
