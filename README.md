@@ -1,6 +1,6 @@
 # calibration-ubuntu
 
-# bashrc
+## fix LD_LIBRARY_PATH
 ```bash
 
 export PATH=/usr/local/cuda-11.2/bin:$PATH
@@ -22,7 +22,7 @@ export Open_BLAS_LIB_SEARCH_PATHS=/usr/lib/x86_64-linux-gnu
 export HISTTIMEFORMAT="%d/%m/%y %T "
 ```
 
-
+## fix cert issues
 ```bashrc
 sudo apt install ca-certificates
 pip3 install certifi
@@ -45,7 +45,7 @@ xinput set-button-map 14 1 0
 conda config --set auto_activate_base false
 ```
 
-# console 
+# disable auto docking 
 ```sh
 gnome-extensions disable ubuntu-dock@ubuntu.com
 
