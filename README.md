@@ -41,7 +41,9 @@ ps aux --sort -rss
 xinput set-button-map 14 1 0
 
 
-   
+sudo apt-get install libimobiledevice-utils libimobiledevice-dev libgpod-dev
+
+
 conda config --set auto_activate_base false
 ```
 
