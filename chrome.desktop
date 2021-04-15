@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=chrome
+Exec=/home/uv/.local/share/applications/chrome/chrome
+Icon=/home/uv/.local/share/applications/chrome/product_logo_48.png
+Type=Application
+Terminal=false
