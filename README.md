@@ -49,6 +49,20 @@ conda config --set auto_activate_base false
 
 # disable auto docking 
 ```sh
+
+gedit /etc/sysctl.conf
+
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+
+cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+
+sudo sysctl -p 
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+
 gnome-extensions disable ubuntu-dock@ubuntu.com
 
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
