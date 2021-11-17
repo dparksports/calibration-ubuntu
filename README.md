@@ -1,7 +1,7 @@
 # calibration-ubuntu
 
 
-# fix echo on Ubuntu
+# fix echo sound on Ubuntu
 ```sh
 sudo nano /etc/pulse/default.pa
 load-module module-echo-cancel
