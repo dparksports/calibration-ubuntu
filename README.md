@@ -1,4 +1,5 @@
-# calibration-ubuntu
+# Minimal Ubuntu
+These steps will keep Ubuntu light and lean.
 
 
 # fix echo sound on Ubuntu
