@@ -1,5 +1,45 @@
 # calibration-ubuntu
 
+
+# fix echo on Ubuntu
+```sh
+sudo nano /etc/pulse/default.pa
+load-module module-echo-cancel
+```
+
+# minimal background 
+```sh
+gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+
+gsettings set org.gnome.mutter edge-tiling false
+gsettings set org.gnome.desktop.background show-desktop-icons false
+   
+gsettings set org.gnome.desktop.background picture-uri ''
+gsettings set org.gnome.desktop.background primary-color "#0"
+gsettings set org.gnome.desktop.background secondary-color "#0"
+gsettings set org.gnome.desktop.background color-shading-type "solid"
+```
+
+# disable auto docking 
+```sh
+
+gedit /etc/sysctl.conf
+
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+
+cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+
+sudo sysctl -p 
+
+sudo apt install libfreeimage-dev
+
+gnome-extensions disable ubuntu-dock@ubuntu.com
+
+
+```
+
 ## fix LD_LIBRARY_PATH
 ```bash
 
@@ -47,30 +87,3 @@ sudo apt-get install libimobiledevice-utils libimobiledevice-dev libgpod-dev
 conda config --set auto_activate_base false
 ```
 
-# disable auto docking 
-```sh
-
-gedit /etc/sysctl.conf
-
-net.ipv6.conf.all.disable_ipv6 = 1
-net.ipv6.conf.default.disable_ipv6 = 1
-net.ipv6.conf.lo.disable_ipv6 = 1
-
-cat /proc/sys/net/ipv6/conf/all/disable_ipv6
-
-sudo sysctl -p 
-
-sudo apt install libfreeimage-dev
-
-gnome-extensions disable ubuntu-dock@ubuntu.com
-
-gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
-
-gsettings set org.gnome.mutter edge-tiling false
-gsettings set org.gnome.desktop.background show-desktop-icons false
-   
-gsettings set org.gnome.desktop.background picture-uri ''
-gsettings set org.gnome.desktop.background primary-color "#FFFFFF"
-gsettings set org.gnome.desktop.background secondary-color "#FFFFFF"
-gsettings set org.gnome.desktop.background color-shading-type "solid"
-```
