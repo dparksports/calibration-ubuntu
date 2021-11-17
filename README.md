@@ -1,5 +1,5 @@
 # Minimal Ubuntu
-These steps will keep Ubuntu light and lean.
+These steps will keep Ubuntu light without unnecessary apps and configurations.
 
 
 # fix echo sound on Ubuntu
