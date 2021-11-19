@@ -4,8 +4,14 @@ These steps will keep Ubuntu light without unnecessary apps and configurations.
 
 # fix echo sound on Ubuntu
 ```sh
+
+option 1: 
 sudo nano /etc/pulse/default.pa
 load-module module-echo-cancel
+
+option 2:
+sudo apt remove speech-dispatcher
+
 ```
 
 # minimal background 
