@@ -17,10 +17,8 @@ sudo apt remove speech-dispatcher
 # minimal background 
 ```sh
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
-
 gsettings set org.gnome.mutter edge-tiling false
 gsettings set org.gnome.desktop.background show-desktop-icons false
-   
 gsettings set org.gnome.desktop.background picture-uri ''
 gsettings set org.gnome.desktop.background primary-color "#0"
 gsettings set org.gnome.desktop.background secondary-color "#0"
