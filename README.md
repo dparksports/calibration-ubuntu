@@ -3,7 +3,7 @@ These steps will keep Ubuntu light without unnecessary apps and configurations.
 
 
 
-# minimal background 
+# no background 
 ```sh
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.mutter edge-tiling false
