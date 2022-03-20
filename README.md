@@ -2,17 +2,6 @@
 These steps will keep Ubuntu light without unnecessary apps and configurations.
 
 
-# fix echo sound on Ubuntu
-```sh
-
-option 1: 
-sudo nano /etc/pulse/default.pa
-load-module module-echo-cancel
-
-option 2:
-sudo apt remove speech-dispatcher
-
-```
 
 # minimal background 
 ```sh
@@ -25,7 +14,7 @@ gsettings set org.gnome.desktop.background secondary-color "#0"
 gsettings set org.gnome.desktop.background color-shading-type "solid"
 ```
 
-# disable auto docking 
+# disable IPv6
 ```sh
 
 gedit /etc/sysctl.conf
@@ -45,24 +34,8 @@ gnome-extensions disable ubuntu-dock@ubuntu.com
 
 ```
 
-## fix LD_LIBRARY_PATH
+## history with timestamp
 ```bash
-
-export PATH=/usr/local/cuda-11.2/bin:$PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.2/lib64
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
-# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-export CUDA_HOME=/usr/local/cuda
-
-export PATH=/home/uv/bazel-3.1.0/output/:$PATH
-export PATH=/home/uv/protobuf-3.15.6:$PATH
-
-# export PYTHONPATH=/home/uv/models:/home/uv/models/research:/home/uv/models/research/slim:$PYTHONPATH
-
-export SSL_CERT_DIR=/etc/ssl/certs
-
-export Open_BLAS_INCLUDE_SEARCH_PATHS=/usr/include/x86_64-linux-gnu
-export Open_BLAS_LIB_SEARCH_PATHS=/usr/lib/x86_64-linux-gnu
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
 ```
