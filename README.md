@@ -1,4 +1,4 @@
-# solid background 
+# background 
 ```sh
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.mutter edge-tiling false
