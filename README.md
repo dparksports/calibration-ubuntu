@@ -1,4 +1,4 @@
-# no background 
+# solid background 
 ```sh
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.mutter edge-tiling false
@@ -9,13 +9,13 @@ gsettings set org.gnome.desktop.background secondary-color "#0"
 gsettings set org.gnome.desktop.background color-shading-type "solid"
 ```
 
-## history with timestamp
+## history
 ```bash
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
 ```
 
-## update certs
+## certs
 ```bashrc
 sudo apt install ca-certificates
 pip3 install certifi
