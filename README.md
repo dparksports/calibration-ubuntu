@@ -9,7 +9,7 @@ gsettings set org.gnome.desktop.background secondary-color "#0"
 gsettings set org.gnome.desktop.background color-shading-type "solid"
 ```
 
-## use APT HTTPS
+## use HTTPS
 ```bash
 
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
