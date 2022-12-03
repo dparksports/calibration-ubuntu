@@ -12,10 +12,14 @@ gsettings set org.gnome.desktop.background color-shading-type "solid"
 
 ```
 
-## use HTTPS
+## use HTTPS using ubuntu-ports
 ```bash
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+sudo sed --in-place --regexp-extended 's http://(ports\.ubuntu\.com|security\.ubuntu\.com) https://mirrors.ocf.berkeley.edu/ubuntu-ports/ g' /etc/apt/sources.list
+```
 
-
+## use HTTPS using archive
+```bash
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 sudo sed --in-place --regexp-extended 's http://(us\.archive\.ubuntu\.com|security\.ubuntu\.com) https://mirrors.wikimedia.org g' /etc/apt/sources.list
 
