@@ -32,11 +32,15 @@ sudo sed --in-place --regexp-extended 's http://(us\.archive\.ubuntu\.com|securi
 export HISTTIMEFORMAT="%d/%m/%y %T "
 ```
 
-## certs
-```bashrc
-sudo apt install ca-certificates
-pip3 install certifi
-sudo update-ca-certificates --fresh
-export SSL_CERT_DIR=/etc/ssl/certs
+## firewall
+```bash
+sudo ufw enable
+sudo ufw default deny outgoing
+sudo ufw allow out 80
+sudo ufw allow out 443
+sudo ufw allow out 53
+sudo ufw allow out 67
+sudo ufw allow out 123
+sudo ufw allow out 1194
 ```
 
