@@ -26,6 +26,14 @@ sudo sed --in-place --regexp-extended 's http://(us\.archive\.ubuntu\.com|securi
 ```
 
 
+## use HTTPS using WSL-Ubuntu 
+```bash
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+sudo sed --in-place --regexp-extended 's http://(archive\.ubuntu\.com|security\.ubuntu\.com) https://mirrors.wikimedia.org g' /etc/apt/sources.list
+
+```
+
+
 ## history
 ```bash
 
