@@ -1,3 +1,27 @@
+## remove snapd 
+```bash
+snap list
+#Let’s also stop snapd (snap daemon) services:
+
+sudo systemctl disable snapd.service
+sudo systemctl disable snapd.socket
+sudo systemctl disable snapd.seeded.service
+#Then remove each snap. It’s best to do so one-by-one, rather than all in one apt remove line. So something like:
+
+sudo snap remove snapd-desktop-integration
+sudo snap remove gtk-common-themes
+sudo snap remove gnome-3-38-2004
+sudo snap remove core18
+sudo snap remove snap-store
+sudo snap remove firefox
+
+#Now, let’s delete any leftover snap cached data:
+sudo apt autoremove --purge snapd
+sudo rm -rf /var/cache/snapd/
+rm -rf ~/snap
+```
+
+
 # background 
 ```sh
 
@@ -12,11 +36,7 @@ gsettings set org.gnome.desktop.background color-shading-type "solid"
 
 ```
 
-## use HTTPS using ubuntu-ports
-```bash
-sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
-sudo sed --in-place --regexp-extended 's http://(ports\.ubuntu\.com|security\.ubuntu\.com) https://mirrors.ocf.berkeley.edu/ubuntu-ports/ g' /etc/apt/sources.list
-```
+
 
 ## use HTTPS using archive
 ```bash
@@ -25,6 +45,11 @@ sudo sed --in-place --regexp-extended 's http://(us\.archive\.ubuntu\.com|securi
 
 ```
 
+## use HTTPS using ubuntu-ports
+```bash
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+sudo sed --in-place --regexp-extended 's http://(ports\.ubuntu\.com|security\.ubuntu\.com) https://mirrors.ocf.berkeley.edu/ubuntu-ports/ g' /etc/apt/sources.list
+```
 
 ## use HTTPS using WSL-Ubuntu 
 ```bash
