@@ -74,6 +74,7 @@ sudo ufw allow out 443
 sudo ufw allow out 53
 sudo ufw allow out 67
 sudo ufw allow out 123
+sudo ufw allow out 22
 sudo ufw allow out 1194
 ```
 
