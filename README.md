@@ -1,3 +1,10 @@
+# conda install cuda 11.8 & 12.1
+```sh
+conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
+conda install -c "nvidia/label/cuda-12.1" cuda-toolkit
+
+```
+
 ## remove snapd 
 ```bash
 snap list
