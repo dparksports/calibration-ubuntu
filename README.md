@@ -2,7 +2,11 @@
 ```sh
 conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 conda install -c "nvidia/label/cuda-12.1" cuda-toolkit
+```
 
+# offline yt
+```sh
+./yt-dlp_macos -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' -o video.mp4
 ```
 
 ## remove snapd 
@@ -40,7 +44,6 @@ gsettings set org.gnome.desktop.background picture-uri ''
 gsettings set org.gnome.desktop.background primary-color "#0"
 gsettings set org.gnome.desktop.background secondary-color "#0"
 gsettings set org.gnome.desktop.background color-shading-type "solid"
-
 ```
 
 
@@ -49,7 +52,6 @@ gsettings set org.gnome.desktop.background color-shading-type "solid"
 ```bash
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 sudo sed --in-place --regexp-extended 's http://(us\.archive\.ubuntu\.com|security\.ubuntu\.com) https://mirrors.wikimedia.org g' /etc/apt/sources.list
-
 ```
 
 ## use HTTPS using ubuntu-ports
@@ -62,7 +64,6 @@ sudo sed --in-place --regexp-extended 's http://(ports\.ubuntu\.com|security\.ub
 ```bash
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 sudo sed --in-place --regexp-extended 's http://(archive\.ubuntu\.com|security\.ubuntu\.com) https://mirrors.wikimedia.org g' /etc/apt/sources.list
-
 ```
 
 
