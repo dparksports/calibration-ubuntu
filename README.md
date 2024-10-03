@@ -4,6 +4,11 @@ conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 conda install -c "nvidia/label/cuda-12.1" cuda-toolkit
 ```
 
+# parallel convert
+```sh
+parallel -j 4 convert {} -crop 2560x700+0+300 out/{} ::: Screenshot*.png
+```
+
 # offline yt
 ```sh
 ./yt-dlp_macos -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' -o video.mp4
