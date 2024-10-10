@@ -51,6 +51,11 @@ gsettings set org.gnome.desktop.background secondary-color "#0"
 gsettings set org.gnome.desktop.background color-shading-type "solid"
 ```
 
+## use HTTPS using archive - Ubuntu 24.04.1 LTS
+```bash
+sudo cp /etc/apt/sources.list.d/ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources.backup
+sudo sed --in-place --regexp-extended 's http://(archive\.ubuntu\.com|security\.ubuntu\.com) https://mirrors.wikimedia.org g' /etc/apt/sources.list.d/ubuntu.sources
+```
 
 
 ## use HTTPS using archive
