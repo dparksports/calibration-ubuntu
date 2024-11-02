@@ -37,6 +37,10 @@ sudo rm -rf /var/cache/snapd/
 rm -rf ~/snap
 ```
 
+## remove tracker 
+```bash
+sudo apt purge tracker
+```
 
 # background 
 ```sh
